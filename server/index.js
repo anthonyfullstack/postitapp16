@@ -101,7 +101,9 @@ app.get("/getPosts", async (req, res) => {
   }
 });
 
-const port = ENV.PORT || 3001;
+//const port = ENV.PORT || 3001;
+//const port = ENV.PORT || 0.0.0.0:10000;
+const port = ENV.PORT;
 app.listen(port, () => {
   console.log(`You are connected at port: ${port}`);
 });
