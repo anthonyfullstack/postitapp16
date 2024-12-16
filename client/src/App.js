@@ -11,6 +11,7 @@ import { Container, Row, Col } from "reactstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { useSelector } from "react-redux";
+import About from "./Components/About";
 
 const App = () => {
   const email = useSelector((state) => state.users.user.email);
@@ -29,6 +30,7 @@ const App = () => {
               <Route path="/login" element={<Login />}></Route>
               <Route path="/profile" element={<Profile />}></Route>
               <Route path="/register" element={<Register />}></Route>
+              <Route path="/about" element={<About />}></Route>
             </Routes>
           </Row>
 

@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`About > matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      About this project
+    </h1>
+    <p>
+      This project is developed by: Anthony
+    </p>
+    <p>
+      Email: anthony.madlambayan@utas.edu.om
+    </p>
+    <img
+      alt="devimage"
+      class="userImage"
+      src="/src/Images/user.png"
+    />
+    <button>
+      Contact developer
+    </button>
+    <h1>
+      My first project
+    </h1>
+  </div>
+</DocumentFragment>
+`;

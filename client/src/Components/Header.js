@@ -38,6 +38,10 @@ const Header = () => {
           </NavItem>
 
           <NavItem>
+            <Link to="/about">About</Link>
+          </NavItem>
+
+          <NavItem>
             <Link onClick={handleLogout}>Logout</Link>
           </NavItem>
         </Nav>

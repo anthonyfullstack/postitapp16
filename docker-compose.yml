@@ -1,0 +1,32 @@
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_SERVER_URL=http://localhost:3001
+    depends_on:
+      - server
+    networks:
+      - app-network
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3001
+      DB_USER: sem120242025
+      DB_PASSWORD: abcd1234
+      DB_NAME: postITDb
+      DB_CLUSTER: postitcluster.gsgf6.mongodb.net
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
